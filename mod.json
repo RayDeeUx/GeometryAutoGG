@@ -1,0 +1,126 @@
+{
+	"geode": "4.4.0",
+	"gd": {
+		"win": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074",
+		"android": "2.2074"
+	},
+	"id": "raydeeux.compliantautogg",
+	"name": "AutoGG",
+	"version": "v1.0.0",
+	"developer": "RayDeeUx",
+	"description": "A less aggressive approach to level completion comment automation.",
+	"repository": "https://github.com/RayDeeUx/GeometryAutoGG",
+	"settings": {
+		"enabled": {
+			"name": "Enabled",
+			"description": "Toggles the mod.",
+			"type": "bool",
+			"default": true
+		},
+		"autoComment": {
+			"name": "Auto-Upload Comments to Levels",
+			"type": "bool",
+			"default": false
+		},
+		"autoProfileComment": {
+			"name": "Auto-Upload Comments to Your Profile",
+			"type": "bool",
+			"default": false
+		},
+		"preFill": {
+			"name": "Pre-filled Level Comment Message",
+			"description": "The message pre-fill text for a level comment. Note that the attempt count will immediately follow whatever text you put here.\n\nUsing default settings, the pre-filled message will be:\n<cl>`GG!`</c> `(1237582 att)`.\n\nOptionally, Platformer levels will include the number of seconds you took to complete the level as well:\n\n<cl>`GG!`</c> `(1237582 att 7442 sec)`\n## <c_>***__This WILL be trimmed to 30 characters!!!__***</c>",
+			"type": "string",
+			"default": "GG!",
+			"filter": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ:-_+=`~0123456789!@#$%^&*()[]{}|;:'\"<>,.?/\\ "
+		},
+		"includeSecondsForPlatformer": {
+			"name": "Platformer Levels: Include Attempt Time",
+			"description": "Include the total time you spent completing the Platformer level.\n\nUsing default settings, the pre-filled message would be:\n\n`GG! (1237582 att, 7442.34 sec)`\n",
+			"type": "bool",
+			"default": false
+		},
+		"levelLengthMinimum": {
+			"name": "Track Classic Levels (Specify Minimum Length)",
+			"description": "The minimum level length needed to pre-fill the comment box.\n\n<cy>For Platformer levels, see other settings.</c>",
+			"type": "string",
+			"default": "Long",
+			"one-of": [
+				"Don't Track Classic Levels",
+				"Tiny",
+				"Short",
+				"Medium",
+				"Long",
+				"XL"
+			]
+		},
+		"enableOnPlatformer": {
+			"name": "Track Platformer Levels",
+			"description": "Pre-fills the comment box when completing Platformer levels.\n\n<cy>For Classic levels, see other settings.</c>",
+			"type": "bool",
+			"default": true
+		},
+		"trackDemons": {
+			"name": "Track Demon Levels",
+			"description": "Pre-fill the comment box when completing a Demon level.\n\n<cy>This setting does NOT apply to Non-Demon levels; see other settings instead.</c>",
+			"type": "bool",
+			"default": true
+		},
+		"onlyTrackRated": {
+			"name": "Non-Demon Levels: Track Rated Levels Only",
+			"description": "Pre-fill the comment box when completing a rated level ONLY.\n\n<cy>This setting does NOT apply to Demon levels; see other settings instead.</c>",
+			"type": "bool",
+			"default": true
+		},
+		"minimumStars": {
+			"name": "Tracking Rated Levels: Star/Moon Rate Minimum",
+			"description": "Minimum star/moon rate required to pre-fill the comment box when completing a rated level.\n\n<cy>This setting does NOT apply to Demon levels; see other settings instead.</c>",
+			"type": "int",
+			"default": 1,
+			"min": 1,
+			"max": 9
+		},
+		"alsoFillForProfileComments": {
+			"name": "Also Pre-Fill for Profile Comments",
+			"description": "Pre-fill the comment box when making a profile comment/post as well.",
+			"type": "bool",
+			"default": false
+		},
+		"profilePreFill": {
+			"name": "Pre-filled Profile Comment Message",
+			"description": "The message pre-fill text. Note that the attempt count will immediately follow whatever text you put here.\n\nUsing default settings, the pre-filled message will be:\n`Stereo Madness 100%`<cl>`GG!`</c> `(1237582 att)`.\n\nOptionally, Platformer levels will include the number of seconds you took to complete the level as well:\n\n`The Tower 100%`<cl>`GG!`</c> `(1237582 att 7442 sec)`\n## <c_>***__This WILL be trimmed to 30 characters!!!__***</c>",
+			"type": "string",
+			"default": "GG!",
+			"filter": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ:-_+=`~0123456789!@#$%^&*()[]{}|;:'\"<>,.?/\\ "
+		},
+		"notifs": {
+			"name": "Notifications",
+			"type": "bool",
+			"default": false
+		},
+		"logging": {
+			"name": "Logging",
+			"type": "bool",
+			"default": false
+		}
+	},
+	"dependencies": {
+		"geode.node-ids": ">=1.20.0"
+	},
+	"incompatibilties": {
+		"thesillydoggo.auto-gg": {
+			"version": ">=1.0.0",
+			"importance": "superseded"
+		}
+	},
+	"issues": {
+		"url": "https://discord.com/channels/911701438269386882/1205523212444639292",
+		"info": "Ping me <cl>(@erymanthus)</c> in the Geode SDK Discord server's <cl>#help</c> channel if you need help. <cr>DMs are NOT accepted.</c>"
+	},
+	"links": {
+		"community": "https://discord.gg/WqZBYdBWZW",
+		"homepage": "https://discord.com/channels/822510988409831486/1206371881222144020"
+	}
+}
