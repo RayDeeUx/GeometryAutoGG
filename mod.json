@@ -113,6 +113,10 @@
 		"thesillydoggo.auto-gg": {
 			"version": ">=1.0.0",
 			"importance": "superseded"
+		},
+		"viper.newbestcomments": {
+			"version": ">=1.0.0",
+			"importance": "conflicting"
 		}
 	},
 	"issues": {
