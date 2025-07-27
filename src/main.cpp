@@ -133,7 +133,6 @@ class $modify(MyShareCommentLayer, ShareCommentLayer) {
 					if (const auto toggler = menu->getChildByType<CCMenuItemToggler>(0)) {
 						Loader::get()->queueInMainThread([this, toggler]() {
 							if (toggler) toggler->activate();
-							this->updatePercentLabel();
 						});
 					}
 				}
