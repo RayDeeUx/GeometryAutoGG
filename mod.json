@@ -106,17 +106,10 @@
 			"default": false
 		}
 	},
-	"dependencies": {
-		"geode.node-ids": ">=1.20.0"
-	},
 	"incompatibilties": {
 		"thesillydoggo.auto-gg": {
 			"version": ">=1.0.0",
 			"importance": "superseded"
-		},
-		"viper.newbestcomments": {
-			"version": ">=1.0.0",
-			"importance": "conflicting"
 		}
 	},
 	"issues": {
