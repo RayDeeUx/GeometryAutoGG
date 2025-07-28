@@ -98,7 +98,7 @@
 		"notifs": {
 			"name": "Notifications",
 			"type": "bool",
-			"default": false
+			"default": true
 		},
 		"logging": {
 			"name": "Logging",
