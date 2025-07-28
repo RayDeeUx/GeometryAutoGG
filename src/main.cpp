@@ -82,6 +82,8 @@ class $modify(MyPlayLayer, PlayLayer) {
 		log::info("profilePreFill: {}", profilePreFill);
 		log::info("====================================================");
 
+		if (attemptCount < 1 || level->m_normalPercent.value() < 100) return log::info("user has frozen attempt counts or safe mode on a level they've never beaten before, returning");
+
 		if (!enableOnPlatformer && isPlat) return log::info("level is platformer but user does not want to track platformers, returning");
 
 		if (levelLengthMinimum == "Don't Track Classic Levels" && !isPlat) return log::info("level is classic but user does not want to track classic levels, returning");
