@@ -49,6 +49,8 @@ class $modify(MyPlayLayer, PlayLayer) {
 		if (originalPercent > 99) return log::info("level was completed previously, returning");
 		if (level->m_levelType != GJLevelType::Saved) return log::info("level does not have a comments section, returning");
 
+		if (Loader::get()->isModLoaded("thesillydoggo.auto-gg")) return log::info("doggo's autogg mod found, returning");
+
 		const bool isPlat = level->isPlatformer();
 		const int lengthInt = level->m_levelLength;
 		const int starValue = level->m_stars.value();

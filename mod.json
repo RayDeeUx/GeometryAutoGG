@@ -109,7 +109,7 @@
 	"incompatibilties": {
 		"thesillydoggo.auto-gg": {
 			"version": ">=1.0.0",
-			"importance": "superseded"
+			"importance": "breaking"
 		}
 	},
 	"issues": {
