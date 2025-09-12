@@ -89,7 +89,7 @@ class $modify(MyPlayLayer, PlayLayer) {
 		if (!enableOnPlatformer && isPlat) return log::info("level is platformer but user does not want to track platformers, returning");
 
 		if (levelLengthMinimum == "Don't Track Classic Levels" && !isPlat) return log::info("level is classic but user does not want to track classic levels, returning");
-		if (!isPlat && levelLengthMinimum != "Track All Classic Levels" && !levelLengthKeys.contains(levelLengthMinimum) && !level->isPlatformer()) return log::info("level is classic, their levelLengthMinimum setting is {}, which is not part of levelLengthKeys variable, returning", levelLengthMinimum);
+		if (!isPlat && levelLengthMinimum != "Track All Classic Levels" && !levelLengthKeys.contains(levelLengthMinimum)) return log::info("level is classic, their levelLengthMinimum setting is {}, which is not part of levelLengthKeys variable, returning", levelLengthMinimum);
 		if (!isPlat && levelLengthMinimum != "Track All Classic Levels" && lengthInt < levelLengthKeys.at(levelLengthMinimum)) return log::info("level is too short per their levelLengthMinimum setting: level->m_levelLength: {} < levelLengthKeys.at(levelLengthMinimum): {}", lengthInt, levelLengthKeys.at(levelLengthMinimum));
 
 		if (!trackDemons && isDemon) return log::info("user has not chosen to track demon level competions, returning");

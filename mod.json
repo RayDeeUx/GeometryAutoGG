@@ -64,7 +64,7 @@
 		},
 		"trackDemons": {
 			"name": "Track Demon Levels",
-			"description": "Pre-fill the comment box when completing a Demon level.\n\n<cy>This setting does NOT apply to Non-Demon levels; see other settings instead.</c>",
+			"description": "Pre-fill the comment box when completing a Demon level.\n\n<cy>This setting does NOT apply to non-Demon levels; see other settings instead.</c>",
 			"type": "bool",
 			"default": true
 		},
@@ -76,11 +76,11 @@
 		},
 		"minimumStars": {
 			"name": "Tracking Rated Levels: Star/Moon Rate Minimum",
-			"description": "Minimum star/moon rate required to pre-fill the comment box when completing a rated level.\n\n<cy>This setting does NOT apply to Demon levels; see other settings instead.</c>",
+			"description": "Minimum star/moon rate required to pre-fill the comment box when completing a rated level.\n\n<cy>To disable tracking non-Demon levels, set this option to 10.</c>\n<cy>This setting does NOT apply to Demon levels; see other settings instead.</c>",
 			"type": "int",
 			"default": 1,
 			"min": 1,
-			"max": 9
+			"max": 10
 		},
 		"alsoFillForProfileComments": {
 			"name": "Also Pre-Fill for Profile Comments",
