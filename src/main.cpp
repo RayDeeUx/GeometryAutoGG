@@ -222,7 +222,7 @@ $on_mod(Loaded) {
 		log::info("onlyTrackRated: {}", onlyTrackRated);
 	});
 	listenForSettingChanges<int64_t>("minimumStars", [](const int64_t minimumStarsNew) {
-		minimumStars = std::clamp<int>(static_cast<int>(minimumStarsNew), 1, 9);
+		minimumStars = std::clamp<int>(static_cast<int>(minimumStarsNew), 1, 10);
 		log::info("minimumStars: {}", minimumStars);
 	});
 	listenForSettingChanges<bool>("alsoFillForProfileComments", [](const bool alsoFillForProfileCommentsNew) {
