@@ -42,8 +42,8 @@ jobs:
           build-config: RelWithDebInfo
           export-symbols: true
           export-pdb: true
-          bindings: RayDeeUx/bindings
-          bindings-ref: "cut-my-life-into-pieces-this-is-my-last-resort"
+          # bindings: RayDeeUx/bindings
+          # bindings-ref: "cut-my-life-into-pieces-this-is-my-last-resort"
           combine: true
           target: ${{ matrix.config.target }}
 
