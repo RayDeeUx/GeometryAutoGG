@@ -7,4 +7,8 @@ Most of y'all will still ask for automatic comment uploading anyway, so that set
 
 <cy>***__Note:__*** Percentages on your comments may not show in some cases, especially with your most recent comments. This is 99.999% out of my control, and is something you'll need to take up with a Leaderboard Moderator or other in-game Moderator.</c>
 
+Mod inspired by failed attempts from another Geode modder who I wish to keep anonymous.
+
+Mod idea from a potential Discord TOS age minimum violator who I also wish to keep anonymous. [cHVtcA==]
+
 This [Geode mod](https://geode-sdk.org) is licensed under LGPLv2. To report bugs or get help with using my mods, press the Discord button in the lower left corner.

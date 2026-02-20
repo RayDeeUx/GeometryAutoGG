@@ -1,14 +1,14 @@
 {
-	"geode": "4.4.0",
+	"geode": "5.0.0-beta.3",
 	"gd": {
-		"win": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074",
-		"android": "2.2074"
+		"win": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081",
+		"android": "2.2081"
 	},
 	"id": "raydeeux.compliantautogg",
 	"name": "AutoGG",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "RayDeeUx",
 	"description": "A less aggressive approach to level completion comment automation.",
 	"repository": "https://github.com/RayDeeUx/GeometryAutoGG",
@@ -109,7 +109,7 @@
 	"incompatibilties": {
 		"thesillydoggo.auto-gg": {
 			"version": ">=1.0.0",
-			"importance": "breaking"
+			"breaking": false
 		}
 	},
 	"issues": {
